@@ -1,0 +1,7 @@
+{
+  "name": "LnD-Mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
