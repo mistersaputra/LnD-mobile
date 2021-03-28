@@ -1,24 +1,37 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <p>Let's start make ton of money</p>
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-
-    <br>
-    <p (click)="login()">Login</p>
+  <div class="container">
+    <div class="logo">
+      <ion-img src="assets/icon/favicon.png"></ion-img>
+    </div>
+    <div class="menu">
+      <ion-button shape="round" size="large" routerLink="/kpi">
+        <ion-icon slot="start" name="book"></ion-icon> KPI
+      </ion-button>
+      <ion-button shape="round" size="large" routerLink="/project">
+        <ion-icon slot="start" name="documents"></ion-icon> Project
+      </ion-button>
+    </div>
+    <div class="status">
+      <ion-card color="danger" *ngIf="true">
+        <ion-card-header>
+          <ion-icon name="alert-circle-outline"></ion-icon>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-text>
+            2 data belum diunggah ke server. Data akan diunggah otomatis ketika jaringan internet stabil.
+          </ion-text>
+        </ion-card-content>
+      </ion-card>
+      <ion-card color="success" *ngIf="false">
+        <ion-card-header>
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-text>
+            Semua data berhasil diuanggah ke server
+          </ion-text>
+        </ion-card-content>
+      </ion-card>
+    </div>
   </div>
 </ion-content>

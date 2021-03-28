@@ -15,6 +15,14 @@ const routes: Routes = [
     path: 'auth',
     loadChildren: () => import('./auth/auth.module').then( m => m.AuthPageModule)
   },
+  {
+    path: 'kpi',
+    loadChildren: () => import('./kpi/kpi.module').then( m => m.KpiPageModule)
+  },
+  {
+    path: 'project',
+    loadChildren: () => import('./project/project.module').then( m => m.ProjectPageModule)
+  },
 ];
 
 @NgModule({

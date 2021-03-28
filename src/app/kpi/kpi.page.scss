@@ -1,0 +1,17 @@
+.container {
+    padding: 2em;
+    text-align: center;
+
+    ion-button {
+        width: 70%;
+        max-width: 250px;
+        min-width: 145px;
+        margin: 10px;
+    }
+}
+.menu {
+    padding-bottom: 3em;
+    ion-label{
+        text-transform: uppercase;
+    }
+}
