@@ -23,6 +23,10 @@ const routes: Routes = [
     path: 'project',
     loadChildren: () => import('./project/project.module').then( m => m.ProjectPageModule)
   },
+  {
+    path: 'kpi-green-card',
+    loadChildren: () => import('./kpi-green-card/kpi-green-card.module').then( m => m.KpiGreenCardPageModule)
+  },
 ];
 
 @NgModule({
