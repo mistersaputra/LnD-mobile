@@ -1,10 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Plugins } from '@capacitor/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { AlertController, LoadingController, ToastController, PopoverController, Platform } from '@ionic/angular';
 import { retry } from 'rxjs/operators';
-
-const { Storage } = Plugins;
 
 @Injectable({
   providedIn: 'root'

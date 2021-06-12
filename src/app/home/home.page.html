@@ -4,6 +4,9 @@
       <ion-img src="assets/icon/favicon.png"></ion-img>
     </div>
     <div class="menu">
+      <ion-button shape="round" size="large">
+        <ion-icon slot="start" name="person-sharp"></ion-icon> Profil
+      </ion-button>
       <ion-button shape="round" size="large" routerLink="/kpi">
         <ion-icon slot="start" name="book"></ion-icon> KPI
       </ion-button>
@@ -12,7 +15,7 @@
       </ion-button>
     </div>
     <div class="status">
-      <ion-card color="danger" *ngIf="true">
+      <ion-card color="danger" *ngIf="false">
         <ion-card-header>
           <ion-icon name="alert-circle-outline"></ion-icon>
         </ion-card-header>

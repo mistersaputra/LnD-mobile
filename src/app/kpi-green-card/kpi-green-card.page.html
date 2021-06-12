@@ -9,59 +9,41 @@
 
 <ion-content>
   <form> 
-    <ion-list class="my-1">
-      <ion-item>
-        <ion-label position="floating">Pertanyaan 1</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item> 
-      <ion-item>
-        <ion-label position="floating">Pertanyaan 2</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item> 
-      <ion-item>
-        <ion-label position="floating">Pertanyaan 3</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item> 
-      <ion-item>
-        <ion-label position="floating">Pertanyaan 3</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item> 
-      <ion-item>
-        <ion-label position="floating">Pertanyaan 3</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item> 
-      <ion-item>
-        <ion-label position="floating">Pertanyaan 3</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item> 
-      <ion-item>
-        <ion-label position="floating">Pertanyaan 3</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item> 
-      <ion-item>
-        <ion-label position="floating">Pertanyaan 3</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item> 
-      <ion-item>
-        <ion-label position="floating">Pertanyaan 3</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item> 
-      <ion-item>
-        <ion-label position="floating">Pertanyaan 3</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item> 
-      <ion-item>
-        <ion-label position="floating">Pertanyaan 3</ion-label>
-        <ion-input type="text"></ion-input>
-      </ion-item> 
-      
+    <ion-list>
+      <form [formGroup]="myForm">
+        <ion-item>
+          <ion-label position="floating">Nama</ion-label>
+          <ion-input type="text" formControlName="name" readonly></ion-input>
+        </ion-item> 
+        <ion-item>
+          <ion-label position="floating">Tanggal</ion-label>
+          <ion-datetime formControlName="date" display-format="D MMMM YYYY" readonly></ion-datetime>
+        </ion-item> 
+        <ion-item>
+          <ion-label position="floating" class="wrap-text">Perincian dari bahaya yang diamati</ion-label>
+          <ion-textarea formControlName="detail" rows="4" cols="20"></ion-textarea>
+        </ion-item> 
+        <ion-item>
+          <ion-label position="floating" class="wrap-text">Rincian tindakan perbaikan langsung</ion-label>
+          <ion-textarea formControlName="action" rows="4" cols="20"></ion-textarea>
+        </ion-item> 
+        <ion-item>
+          <ion-label position="floating">Kode Bahaya</ion-label>
+          <ion-select formControlName="code">
+            <ion-select-option value="AA">AA</ion-select-option>
+            <ion-select-option value="A">A</ion-select-option>
+            <ion-select-option value="B">B</ion-select-option>
+            <ion-select-option value="C">C</ion-select-option>
+          </ion-select>
+        </ion-item>
 
-      <div class="images">
-        <ion-label position="floating">Unggah Foto</ion-label>
-        <ion-img id="featuredImg" [src]="base64Image"></ion-img>
-        <input id="files" type="file" class="form-control" name="documents" (change)="onChange($event)">
-        <ion-button shape="round" expand="block" color="secondary" (click)="presentActionSheet()">Pilih gambar</ion-button>
-      </div>
+        <div class="images">
+          <ion-label position="floating">Unggah Foto</ion-label>
+          <ion-img id="featuredImg" [src]="base64Image"></ion-img>
+          <input id="files" type="file" class="form-control"  accept="image/png, image/jpeg" (change)="onChange($event)">
+          <ion-button shape="round" expand="block" color="secondary" (click)="presentActionSheet()">Pilih gambar</ion-button>
+        </div>
+      </form>
     </ion-list>
   </form>
 </ion-content>
