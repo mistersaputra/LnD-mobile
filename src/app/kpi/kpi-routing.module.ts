@@ -7,7 +7,15 @@ const routes: Routes = [
   {
     path: '',
     component: KpiPage
-  }
+  },
+  {
+    path: 'green-card',
+    loadChildren: () => import('./green-card/green-card.module').then( m => m.GreenCardPageModule)
+  },
+  {
+    path: 'inspection-list',
+    loadChildren: () => import('./inspection-list/inspection-list.module').then( m => m.InspectionListPageModule)
+  },
 ];
 
 @NgModule({

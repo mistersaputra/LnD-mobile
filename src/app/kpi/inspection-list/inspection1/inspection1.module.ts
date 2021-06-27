@@ -4,9 +4,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { KpiGreenCardPageRoutingModule } from './kpi-green-card-routing.module';
+import { Inspection1PageRoutingModule } from './inspection1-routing.module';
 
-import { KpiGreenCardPage } from './kpi-green-card.page';
+import { Inspection1Page } from './inspection1.page';
 
 @NgModule({
   imports: [
@@ -14,8 +14,8 @@ import { KpiGreenCardPage } from './kpi-green-card.page';
     FormsModule,
     ReactiveFormsModule,
     IonicModule,
-    KpiGreenCardPageRoutingModule
+    Inspection1PageRoutingModule
   ],
-  declarations: [KpiGreenCardPage]
+  declarations: [Inspection1Page]
 })
-export class KpiGreenCardPageModule {}
+export class Inspection1PageModule {}

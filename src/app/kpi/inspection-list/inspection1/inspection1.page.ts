@@ -2,16 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, ReactiveFormsModule } from '@angular/forms';
 import { ActionSheetController, AlertController  } from '@ionic/angular';
 import { Camera, CameraResultType, CameraSource } from '@capacitor/camera';
-import { DataService } from '../../services/data/data.service';
+import { DataService } from '../../../../services/data/data.service';
 
 @Component({
-  selector: 'app-kpi-green-card',
-  templateUrl: './kpi-green-card.page.html',
-  styleUrls: ['./kpi-green-card.page.scss'],
+  selector: 'app-inspection1',
+  templateUrl: './inspection1.page.html',
+  styleUrls: ['./inspection1.page.scss'],
 })
-export class KpiGreenCardPage implements OnInit {
+export class Inspection1Page implements OnInit {
 
-  date = new Date().toLocaleDateString();
+  date = new Date().toISOString().slice(0, 10)
   myForm: FormGroup;
 
   loading: any;
@@ -25,11 +25,67 @@ export class KpiGreenCardPage implements OnInit {
     private dataService: DataService,
   ) { 
     this.myForm = this.formBuilder.group({
-      name: ['Sandro', Validators.required],
       date: [this.date, Validators.required],
-      detail: ['', Validators.required],
-      action: ['', Validators.required],
-      code: ['', Validators.required],
+      nameSite: ['', Validators.required],
+      department: ['', Validators.required],
+      location: ['', Validators.required],
+      percentage: ['', Validators.required],
+      q1_actual: ['', Validators.required],
+      q1_code: ['', Validators.required],
+      q2_actual: ['', Validators.required],
+      q2_code: ['', Validators.required],
+      q3_actual: ['', Validators.required],
+      q3_code: ['', Validators.required],
+      q4_actual: ['', Validators.required],
+      q4_code: ['', Validators.required],
+      q5_actual: ['', Validators.required],
+      q5_code: ['', Validators.required],
+      q6_actual: ['', Validators.required],
+      q6_code: ['', Validators.required],
+      q7_actual: ['', Validators.required],
+      q7_code: ['', Validators.required],
+      q8_actual: ['', Validators.required],
+      q8_code: ['', Validators.required],
+      q9_actual: ['', Validators.required],
+      q9_code: ['', Validators.required],
+      q10_actual: ['', Validators.required],
+      q10_code: ['', Validators.required],
+      q11_actual: ['', Validators.required],
+      q11_code: ['', Validators.required],
+      q12_actual: ['', Validators.required],
+      q12_code: ['', Validators.required],
+      q13_actual: ['', Validators.required],
+      q13_code: ['', Validators.required],
+      q14_actual: ['', Validators.required],
+      q14_code: ['', Validators.required],
+      q15_actual: ['', Validators.required],
+      q15_code: ['', Validators.required],
+      q16_actual: ['', Validators.required],
+      q16_code: ['', Validators.required],
+      q17_actual: ['', Validators.required],
+      q17_code: ['', Validators.required],
+      q18_actual: ['', Validators.required],
+      q18_code: ['', Validators.required],
+      q19_actual: ['', Validators.required],
+      q19_code: ['', Validators.required],
+      q20_actual: ['', Validators.required],
+      q20_code: ['', Validators.required],
+      q21_actual: ['', Validators.required],
+      q21_code: ['', Validators.required],
+      q22_actual: ['', Validators.required],
+      q22_code: ['', Validators.required],
+      q23_actual: ['', Validators.required],
+      q23_code: ['', Validators.required],
+      q24_actual: ['', Validators.required],
+      q24_code: ['', Validators.required],
+      q25_actual: ['', Validators.required],
+      q25_code: ['', Validators.required],
+      q26_actual: ['', Validators.required],
+      q26_code: ['', Validators.required],
+      q27_actual: ['', Validators.required],
+      q27_code: ['', Validators.required],
+      q28_actual: ['', Validators.required],
+      q28_code: ['', Validators.required],
       image: [''],
       authorization: [''],
       timezone: [''],

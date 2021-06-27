@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { KpiGreenCardPage } from './kpi-green-card.page';
+import { GreenCardPage } from './green-card.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: KpiGreenCardPage
+    component: GreenCardPage
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class KpiGreenCardPageRoutingModule {}
+export class GreenCardPageRoutingModule {}

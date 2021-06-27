@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { KpiGreenCardPage } from './kpi-green-card.page';
+import { GreenCardPage } from './green-card.page';
 
-describe('KpiGreenCardPage', () => {
-  let component: KpiGreenCardPage;
-  let fixture: ComponentFixture<KpiGreenCardPage>;
+describe('GreenCardPage', () => {
+  let component: GreenCardPage;
+  let fixture: ComponentFixture<GreenCardPage>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ KpiGreenCardPage ],
+      declarations: [ GreenCardPage ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(KpiGreenCardPage);
+    fixture = TestBed.createComponent(GreenCardPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

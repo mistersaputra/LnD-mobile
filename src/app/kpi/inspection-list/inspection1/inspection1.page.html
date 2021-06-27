@@ -1,0 +1,155 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Green Card</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form> 
+    <ion-list>
+      <form [formGroup]="myForm">
+        <ion-item>
+          <ion-label position="floating">Tanggal</ion-label>
+          <ion-datetime formControlName="date" display-format="D MMMM YYYY" readonly></ion-datetime>
+        </ion-item> 
+        <ion-item>
+          <ion-label position="floating">Nama Site</ion-label>
+          <ion-input type="text" formControlName="nameSite"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Departemen</ion-label>
+          <ion-input type="text" formControlName="department"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Lokasi</ion-label>
+          <ion-input type="text" formControlName="location"></ion-input>
+        </ion-item>
+
+        <div class="title">
+          <p>Plant Workshop</p>
+        </div>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Praktek Penumpukan & Penyimpanan / Kondisi Ruang Penyimpanan</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF.</ion-label>
+            <ion-input type="text" value="6.2" readonly class="text-right"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal.</ion-label>
+            <ion-input type="text" value="35" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual.</ion-label>
+            <ion-input type="number" min="0" max="35" formControlName="q1_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q1_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Furnitur Kantor  & Ergonomi</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF.</ion-label>
+            <ion-input type="text" value="6.2 / 9.3" readonly class="text-right"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal.</ion-label>
+            <ion-input type="text" value="25" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual.</ion-label>
+            <ion-input type="number" min="0" max="25" formControlName="q2_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q2_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Struktur: Atap, Dinding, Pintu, Jendela, Lantai, dll.</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF.</ion-label>
+            <ion-input type="text" value="6.2" readonly class="text-right"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal.</ion-label>
+            <ion-input type="text" value="50" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual.</ion-label>
+            <ion-input type="number" min="0" max="50" formControlName="q3_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q3_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Daerah Berjalan / Daerah Bekerja</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF.</ion-label>
+            <ion-input type="text" value="6.2" readonly class="text-right"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal.</ion-label>
+            <ion-input type="text" value="25" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual.</ion-label>
+            <ion-input type="number" min="0" max="25" formControlName="q4_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q4_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <div class="images">
+          <ion-label position="floating">Unggah Foto</ion-label>
+          <ion-img id="featuredImg" [src]="base64Image"></ion-img>
+          <input id="files" type="file" class="form-control"  accept="image/png, image/jpeg" (change)="onChange($event)">
+          <ion-button shape="round" expand="block" color="secondary" (click)="presentActionSheet()">Pilih gambar</ion-button>
+        </div>
+      </form>
+    </ion-list>
+  </form>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <div class="ion-padding">
+      <ion-button color="primary" expand="block">Simpan</ion-button>
+    </div>
+  </ion-toolbar>
+</ion-footer>
