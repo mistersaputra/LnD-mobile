@@ -36,15 +36,15 @@
             <ion-label>Praktek Penumpukan & Penyimpanan / Kondisi Ruang Penyimpanan</ion-label>
           </ion-list-header>
           <ion-item>
-            <ion-label position="floating">PSMS REF.</ion-label>
-            <ion-input type="text" value="6.2" readonly class="text-right"></ion-input>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="6.2" readonly></ion-input>
           </ion-item>
           <ion-item>
-            <ion-label position="floating">Poin Maksimal.</ion-label>
+            <ion-label position="floating">Poin Maksimal</ion-label>
             <ion-input type="text" value="35" readonly></ion-input>
           </ion-item>
           <ion-item>
-            <ion-label position="floating">Poin Actual.</ion-label>
+            <ion-label position="floating">Poin Actual</ion-label>
             <ion-input type="number" min="0" max="35" formControlName="q1_actual"></ion-input>
           </ion-item>
           <ion-item>
@@ -62,15 +62,15 @@
             <ion-label>Furnitur Kantor  & Ergonomi</ion-label>
           </ion-list-header>
           <ion-item>
-            <ion-label position="floating">PSMS REF.</ion-label>
-            <ion-input type="text" value="6.2 / 9.3" readonly class="text-right"></ion-input>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="6.2 / 9.3" readonly></ion-input>
           </ion-item>
           <ion-item>
-            <ion-label position="floating">Poin Maksimal.</ion-label>
+            <ion-label position="floating">Poin Maksimal</ion-label>
             <ion-input type="text" value="25" readonly></ion-input>
           </ion-item>
           <ion-item>
-            <ion-label position="floating">Poin Actual.</ion-label>
+            <ion-label position="floating">Poin Actual</ion-label>
             <ion-input type="number" min="0" max="25" formControlName="q2_actual"></ion-input>
           </ion-item>
           <ion-item>
@@ -88,15 +88,15 @@
             <ion-label>Struktur: Atap, Dinding, Pintu, Jendela, Lantai, dll.</ion-label>
           </ion-list-header>
           <ion-item>
-            <ion-label position="floating">PSMS REF.</ion-label>
-            <ion-input type="text" value="6.2" readonly class="text-right"></ion-input>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="6.2" readonly></ion-input>
           </ion-item>
           <ion-item>
-            <ion-label position="floating">Poin Maksimal.</ion-label>
+            <ion-label position="floating">Poin Maksimal</ion-label>
             <ion-input type="text" value="50" readonly></ion-input>
           </ion-item>
           <ion-item>
-            <ion-label position="floating">Poin Actual.</ion-label>
+            <ion-label position="floating">Poin Actual</ion-label>
             <ion-input type="number" min="0" max="50" formControlName="q3_actual"></ion-input>
           </ion-item>
           <ion-item>
@@ -114,15 +114,15 @@
             <ion-label>Daerah Berjalan / Daerah Bekerja</ion-label>
           </ion-list-header>
           <ion-item>
-            <ion-label position="floating">PSMS REF.</ion-label>
-            <ion-input type="text" value="6.2" readonly class="text-right"></ion-input>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="6.2" readonly></ion-input>
           </ion-item>
           <ion-item>
-            <ion-label position="floating">Poin Maksimal.</ion-label>
+            <ion-label position="floating">Poin Maksimal</ion-label>
             <ion-input type="text" value="25" readonly></ion-input>
           </ion-item>
           <ion-item>
-            <ion-label position="floating">Poin Actual.</ion-label>
+            <ion-label position="floating">Poin Actual</ion-label>
             <ion-input type="number" min="0" max="25" formControlName="q4_actual"></ion-input>
           </ion-item>
           <ion-item>
@@ -135,6 +135,644 @@
             </ion-select>
           </ion-item>
         </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Toilet & Kamar Ganti Bersih & Didisinfeksi </ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="6.2" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="30" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="30" formControlName="q5_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q5_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Penerangan/ Ventilasi/ Sistem Ekstraksi Memadai</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="6.2" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="45" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="45" formControlName="q6_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q6_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Housekeeping Baik & Kebersihan Umum</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="6.2" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="30" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="30" formControlName="q7_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q7_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Rambu-rambu Tanda & Kode Warna</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="6.8" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="5" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="5" formControlName="q8_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q8_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Jalan dan Parkir Mencukupi / Kondisi Baik (Parkir Mundur)</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="6.2" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="25" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="25" formControlName="q9_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q9_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Tempat Sampah Mencukupi/ Dikosongkan Secara Berkala</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="14.6/9.7" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="30" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="30" formControlName="q10_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q10_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Pengaman Mesin dan Penutup</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="10.5" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="50" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="50" formControlName="q11_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q11_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Alat-alat Lock-out / Danger Tag</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="6.4" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="40" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="40" formControlName="q12_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q12_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Kotak listrik/ Saklar Penggerak/ Sambungan Kabel/ Pelabelan</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="10.9" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="40" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="40" formControlName="q13_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q13_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Pipa, Keran dan Katup(Tidak ada kebocoran)</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="6.2" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="15" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="15" formControlName="q14_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q14_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Stairs / Ladders / Platforms / Elevated Walkways/ Handrails</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="6.2" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="10" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="10" formControlName="q15_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q15_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Overhead Cranes / Slings / Alat Angkat</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="10.4" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="20" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="20" formControlName="q16_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q16_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Penyimpanan Silinder Gas Terkompresi / Peralatan Obor</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="10.6/10.4" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="40" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="40" formControlName="q17_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q17_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Penyimpanan dan Pengendalian Bahan Kimia Berbahaya dan Mudah Terbakar </ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="10.7" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="20" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="20" formControlName="q18_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q18_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Perkakas Tangan dan Peralatan</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="10.10" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="15" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="15" formControlName="q19_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q19_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Peralatan Listrik Portabel </ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="10.9" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="20" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="20" formControlName="q20_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q20_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Sambungan Kawat Pentanahan </ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="10.9" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="10" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="10" formControlName="q21_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q21_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Inspeksi P2H & Kondisi Kendaraan</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="3.5" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="30" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="30" formControlName="q22_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q22_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Alat Pelindung Diri</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="12" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="20" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="20" formControlName="q23_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q23_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Tabir Las Dipakai</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="6.2" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="15" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="15" formControlName="q24_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q24_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Sistem Peringatan Pergerakan (Klakson/alarm) Digunakan</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="10.8" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="20" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="20" formControlName="q25_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q25_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Perlindungan  & Pencegahan Kebakaran </ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="7.7" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="30" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="30" formControlName="q26_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q26_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Tempat Berkumpul Darurat dan Alarm </ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="7.8" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="20" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="20" formControlName="q27_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q27_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+        <ion-card>
+          <ion-list-header>
+            <ion-label>Peralatan Pertolongan Pertama</ion-label>
+          </ion-list-header>
+          <ion-item>
+            <ion-label position="floating">PSMS REF</ion-label>
+            <ion-input type="text" value="7.4" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Maksimal</ion-label>
+            <ion-input type="text" value="5" readonly></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Poin Actual</ion-label>
+            <ion-input type="number" min="0" max="5" formControlName="q28_actual"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Kode Bahaya</ion-label>
+            <ion-select formControlName="q28_code">
+              <ion-select-option value="AA">AA</ion-select-option>
+              <ion-select-option value="A">A</ion-select-option>
+              <ion-select-option value="B">B</ion-select-option>
+              <ion-select-option value="C">C</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-card>
+
+        <ion-item>
+          <ion-label position="floating">Total Poin Maksimal</ion-label>
+          <ion-input type="text" value="730" readonly></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Total Poin Actual</ion-label>
+          <ion-input type="number" readonly formControlName="total_actual"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Persentase</ion-label>
+          <ion-input type="number" readonly formControlName="percentage"></ion-input>
+        </ion-item>
+
         <div class="images">
           <ion-label position="floating">Unggah Foto</ion-label>
           <ion-img id="featuredImg" [src]="base64Image"></ion-img>

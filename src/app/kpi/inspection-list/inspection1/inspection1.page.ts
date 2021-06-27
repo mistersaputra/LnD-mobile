@@ -30,6 +30,7 @@ export class Inspection1Page implements OnInit {
       department: ['', Validators.required],
       location: ['', Validators.required],
       percentage: ['', Validators.required],
+      total_actual: ['', Validators.required],
       q1_actual: ['', Validators.required],
       q1_code: ['', Validators.required],
       q2_actual: ['', Validators.required],
